@@ -45,6 +45,7 @@
   flex-wrap: wrap-reverse;
   justify-content: space-evenly;
   gap: 20px; 
+  align-items: stretch;
 }
 
 .skills .boxes .box {
@@ -93,4 +94,17 @@
   margin-bottom: 15px;
   text-align: center;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .skills {
+    padding: 40px 5%;
+  }
+
+  .skills .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 
