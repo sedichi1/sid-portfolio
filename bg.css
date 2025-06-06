@@ -1,0 +1,127 @@
+
+/* Background section styles */
+.background {
+  padding: 60px 10%;
+  background-color: #000000;
+  min-height: 80vh;
+}
+
+.background .content {
+  width: 100%;
+}
+
+.background .title {
+  text-align: center;
+  margin-top: 50px;
+  
+}
+.background p{
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #c6c607;
+  text-decoration: none;
+}
+
+.background .title span {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.background .title span::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.background .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px; 
+  align-items: stretch; 
+}
+
+.background .boxes .box {
+  width: 300px;
+  min-height: 250px;   
+  background-color: black;
+  border-radius: 15px;
+  box-shadow: 0 0 15px yellow;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  overflow: hidden;
+}
+
+.background .box {
+  background: black;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0px 10px #c6c607, 0 0px 10px #c6c607,0 0px 20px #c6c607;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  transition: all 0.3s ease;
+}
+
+.background .box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px #c6c607, 0 0px 10px #c6c607, 0 0px 20px #c6c607;
+}
+
+.background .box .icon {
+  height: 60px;
+  width: 60px;
+  background: #c9a805;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 20px;
+}
+
+.background .box .icon i {
+  color: black;
+  font-size: 24px;
+}
+
+.background .box .topic {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.background .box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .background {
+    padding: 40px 5%;
+  }
+
+  .background .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

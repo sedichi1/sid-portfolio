@@ -1,0 +1,43 @@
+#about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: default;
+  padding: 60px 10%;
+  background-color: rgb(0, 0, 0);
+  flex-wrap: wrap;
+  min-height: 84vh;
+} 
+
+.about .abouttext{
+    margin-bottom: 10px;
+    text-align: center;
+    padding-left: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+  
+}
+
+.about .abouttext h1{
+    color: rgb(240, 220, 2) ;
+    font-weight: 700;
+    font-size: 60px;
+
+}
+
+.about .abouttext h1 span{ 
+    color: white;
+}
+.about .abouttext h4{
+    color: white;
+}
+.about .abouttext h4 span{ 
+    color: rgb(240, 220, 2);
+
+}
+
+.about .abouttext p{
+    color: white;
+    margin-top: 20px;
+}
